@@ -22,6 +22,8 @@ async def on_message(message):
         return  # Ignore the message
 
     if message.channel.id == 1276085597651341355:
+        if message.content.startswith("!"):
+            pass
         word = message.content
         response = f"https://kkutu.io/dict/{word}?lang=ko"
         try:
