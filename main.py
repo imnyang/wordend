@@ -21,7 +21,7 @@ async def on_message(message):
     if message.author == bot.user:  # Check if the message is sent by the bot itself
         return  # Ignore the message
 
-    if message.channel.id == 1276085597651341355:
+    if message.channel.id == 1272817370054000751:
         if message.content.startswith("!"):
             pass
         word = message.content
