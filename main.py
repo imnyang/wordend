@@ -70,6 +70,8 @@ async def on_message(message):
                 else:
                     await message.add_reaction("✅")
         except Exception as e:
+            await message.add_reaction("✅")
+            await message.add_reaction("❓")
             print(f"An error occurred: {e}")
 
 bot.run(os.getenv('DISCORD_TOKEN'))
